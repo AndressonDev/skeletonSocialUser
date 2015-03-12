@@ -11,14 +11,14 @@ $settings = array(
      *
      * Please specify a Facebook Client ID
      */
-    'facebook_client_id' => '818368588210281',
+    //'facebook_client_id' => 'your-client-id',
 
     /**
      * Facebook Secret
      *
      * Please specify a Facebook Secret
      */
-    'facebook_secret' => '443b023036d04d5e23dd2a86bdfd84f0',
+   // 'facebook_secret' => 'your-secret',
 
     /**
      * Foursquare Client ID
@@ -53,14 +53,14 @@ $settings = array(
      *
      * Please specify a Google Client ID
      */
-    'google_client_id' => '1079974920668-l5o31in2udvpo8p9ditc0hrn1gjqa0av.apps.googleusercontent.com',
+    //'google_client_id' => 'your-client-id',
 
     /**
      * Google Secret
      *
      * Please specify a Google Secret
      */
-    'google_secret' => 'bGqXsCVrw0JhWWdoz1VLqjIn',
+    'google_secret' => 'your-secret',
 
     /**
      * Google Hosted Domain
@@ -88,14 +88,14 @@ $settings = array(
      *
      * Please specify a Twitter Consumer Key
      */
-    'twitter_consumer_key' => 'seB6NSHThn0peQPrjBqNKPDU3',
+   // 'twitter_consumer_key' => 'your-client-id',
 
     /**
      * Twitter Secret
      *
      * Please specify a Twitter Consumer Secret
      */
-    'twitter_consumer_secret' => 'Im2vDBeAovno64nIegXFXktDAgejJldxM7ES4Rkk6tc7ciXFfx',
+   // 'twitter_consumer_secret' => 'your-secretx',
 
     /**
      * Yahoo! Client ID
