@@ -14,3 +14,5 @@ For ID card and Mobile ID login BitWeb/id-services is used. You can disable/enab
 For socal media logins SocialNick/scn-social-auth is used. You can disable/enable this logins from scn-social-auth.global.php and set secret keys in scn-social-auth.local.php
 
 You can add additional fields to register form just setting 'registerOptions' true/false in local.php.
+
+Update composer !
