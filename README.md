@@ -43,7 +43,7 @@ Make folders data/DoctrineORMModule/Proxy and data/logs writable.
 
 Update composer !
 
-If all set right You must see login form with all login options you have set in configs and links to register form and forgot password form.
+If all set right You must see login form with all login options you have set in configs (you can add/remove them anytime) and links to register form and forgot password form.
 There are basic js validation for all forms.
 After you have created user by registration form you can test also forgot password form and reset password form.
 
