@@ -6,10 +6,7 @@ return array(
     // telling ZfcUserDoctrineORM to skip the entities it defines
     'enable_default_entities' => false,
     'enable_registration' => true,
-    'enable_display_name' => false,
-    'use_registration_form_captcha' => false,
     'login_redirect_route' => 'home',
-    'admin_login_redirect_route' => 'admin',
     'logout_redirect_route' => 'home',
     'password_cost' => 14,
 //    'auth_adapters' => array( 100 => 'ScnSocialAuth\Authentication\Adapter\HybridAuth' ),

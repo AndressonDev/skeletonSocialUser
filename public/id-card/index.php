@@ -14,6 +14,7 @@ session_start();
 
 $redirectUrl = urldecode($_GET["redirectUrl"]);
 
+// remove these two lines if in production, these are for testing only
 $_SERVER['SSL_CLIENT_S_DN'] = 'GN=Mari-Liis/SN=Männik/serialNumber=51001091072/C=EST';
 $_SERVER[Authentication::SSL_CLIENT_VERIFY] = Authentication::SSL_CLIENT_VERIFY_SUCCESSFUL;
 

@@ -36,11 +36,11 @@ return array(
         )
     ),
     'id-services' => [
-        'enable-id-login' => true,
-        'enable-mobile-id-login' => true,
+        'enable-id-login' => true, //enable/disable ID card login
+        'enable-mobile-id-login' => true,  //enable/disable Mobile ID login
         'loggerEnabled' => true,
-        'url' => 'https://www.openxades.org:9443/?wsdl',   // more info about ID card login : http://www.id.ee/index.php?id=30469
-        'serviceName' => 'Testimine',
+        'url' => 'https://www.openxades.org:9443/?wsdl',   // this url is for testing. more info about ID card login : http://www.id.ee/index.php?id=30469
+        'serviceName' => 'Testimine', // this service name is for testing.
         'message' => 'Some message',
      // 'bindTo' => 'Some IP address :0'  // set this IP address if using Dedicated IP
     ],
