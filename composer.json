@@ -1,12 +1,23 @@
 {
-    "name": "zendframework/skeleton-application",
-    "description": "Skeleton Application for ZF2",
+    "name": "AndressonDev/skeletonSocialUser",
+    "description": "Skeleton Application for ZF2 and login functionality with different options",
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
-        "zf2"
+        "zf2",
+        "zfc-user",
+        "BjyAuthorize",
+        "bitweb/id-services",
+        "bitweb/zf2-error-reporting-module"
     ],
     "homepage": "http://framework.zend.com/",
+    "authors": [
+        {
+            "name": "Kristjan Andresson",
+            "email": "kristjan.andresson@bitweb.ee",
+            "homepage": "https://github.com/AndressonDev"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.3.*",
