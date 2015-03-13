@@ -23,7 +23,7 @@ and some of its routes, forms and controllers are also overwritten in Applicatio
 For ID card and Mobile ID login BitWeb/id-services is used. You can disable/enable this logins from local.php => 'id-services'
 For socal media logins SocialNick/scn-social-auth is used. You can disable/enable this logins from scn-social-auth.global.php and set secret keys in scn-social-auth.local.php
 
-There ara two lines in public/id-card/index.php you should remove in production - these are for testing purpose.
+There ara two lines in pubgit pushlic/id-card/index.php you should remove in production - these are for testing purpose.
 And also uncomment lines in public/id-card/.htaccess if in production.
 Mobile id test numbers and personal codes are here http://www.id.ee/index.php?id=36381.
 For more info about BitWeb/id-services see https://github.com/BitWeb/id-services.
@@ -35,5 +35,7 @@ In global.php set your own values in 'languages' array.
 
 To handle social logins I have made new Class Application\Authentication\Adapter\HybridAuth that extends \ScnSocialAuth\Authentication\Adapter\HybridAuth.
 So modify this class methods to match your application criterias.
+
+Make folders data/DoctrineORMModule/Proxy and data/logs writable.
 
 Update composer !
