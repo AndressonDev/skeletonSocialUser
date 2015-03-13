@@ -3,6 +3,8 @@
 This is a skeleton application with different logins and authentication and with different language support.
 This application is just a starting point to build your own application - it's not ready product.
 
+Using SB Admin 2 template for layout http://startbootstrap.com/template-overviews/sb-admin-2
+
 To get started.
 
 1. Create a new database.
@@ -21,9 +23,10 @@ and some of its routes, forms and controllers are also overwritten in Applicatio
 4. Rename local.php.dist to local.php , doctrine.local.php.dist to doctrine.local.php and scn-social-auth.local.php.dist to scn-social-auth.local.php and add your own parameters.
 
 For ID card and Mobile ID login BitWeb/id-services is used. You can disable/enable this logins from local.php => 'id-services'
-For socal media logins SocialNick/scn-social-auth is used. You can disable/enable this logins from scn-social-auth.global.php and set secret keys in scn-social-auth.local.php
+For social media logins SocialNick/scn-social-auth is used. You can disable/enable this logins from scn-social-auth.global.php and set secret keys in scn-social-auth.local.php
+For visual purpose there are different social media logins enabled but you cant use them if you do not set secret keys in scn-social-auth.local.php
 
-There ara two lines in pubgit pushlic/id-card/index.php you should remove in production - these are for testing purpose.
+There ara two lines in public/id-card/index.php you should remove in production - these are for testing purpose.
 And also uncomment lines in public/id-card/.htaccess if in production.
 Mobile id test numbers and personal codes are here http://www.id.ee/index.php?id=36381.
 For more info about BitWeb/id-services see https://github.com/BitWeb/id-services.
