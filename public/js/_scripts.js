@@ -172,9 +172,15 @@ var Validator = {
 
     initLogin: function () {
         $(document).on('submit', '#loginForm', function (e) {
+            var submit = $(".submit");
+            submit.prop('disabled', true);
+            var loginError = $('#loginError');
+            loginError.hide();
             if (Validator.checkIfEmailExists($('#identity'), 'login') && Validator.checkIfPasswordValid()){
                 return;
             }
+            loginError.show();
+            submit.prop('disabled', false);
             return false;
         });
 
@@ -237,8 +243,8 @@ var Validator = {
                     password: true
                 },
                 "passwordRepeat": {
-                    required: true
-                    //equalTo: '#password'
+                    required: true,
+                    equalTo: '#password'
                 }
             },
             errorPlacement: function (error, element) {
@@ -582,5 +588,12 @@ var IdLogin = {
                 cancelButton.click();
             });
         }
+    }
+};
+
+var Mail = {
+    isValidEmail: function(email){
+        var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+        return pattern.test(email);
     }
 };

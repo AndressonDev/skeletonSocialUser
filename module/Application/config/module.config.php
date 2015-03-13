@@ -49,13 +49,12 @@ return array(
                 ),
                 'child_routes' => array(
                     'forgot-password' => array (
-                        'type' => 'Literal',
+                        'type' => 'Segment',
                         'options' => array (
                             'route' => '/forgot-password',
                             'defaults' => array (
                                 'controller' => 'zfcuser',
                                 'action' => 'forgotPassword',
-                                'language' => 'us'
                             )
                         )
                     ),
@@ -66,7 +65,6 @@ return array(
                             'defaults' => array (
                                 'controller' => 'zfcuser',
                                 'action' => 'newPassword',
-                                'language' => 'us'
                             )
                         )
                     ),
@@ -77,7 +75,6 @@ return array(
                             'defaults' => array (
                                 'controller' => 'zfcuser',
                                 'action' => 'mobile-id-authenticate',
-                                'language' => 'us'
                             )
                         )
                     ),
@@ -88,7 +85,6 @@ return array(
                             'defaults' => array (
                                 'controller' => 'zfcuser',
                                 'action' => 'mobile-id-authenticate-status',
-                                'language' => 'us'
                             )
                         )
                     ),
@@ -99,7 +95,6 @@ return array(
                             'defaults' => array (
                                 'controller' => 'zfcuser',
                                 'action' => 'id-card-login',
-                                'language' => 'us'
                             )
                         )
                     ),

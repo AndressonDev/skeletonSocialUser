@@ -50,9 +50,20 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/sb-admin-2.js"></script>
     <script src="/js/_scripts.js"></script>
+    <?php
+        $availableLanguages = $this->config['languages']['available'];
+    ?>
+    <?php if(strlen($this->language) > 0 && array_key_exists($this->language, $availableLanguages)):?>
+        <script type="text/javascript">
+            Common.setLanguage('<?php echo $this->language?>');
+        </script>
+    <?php endif;?>
 </head>
 <body>
+<div id="wrapper">
+    <?php echo $this->partial('layout/partial/empty-navigation'); ?>
     <?php echo $this->content; ?>
+</div>
 <!-- /#wrapper -->
 <?php echo $this->inlineScript() ?>
 

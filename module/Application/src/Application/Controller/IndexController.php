@@ -60,4 +60,20 @@ class IndexController extends AbstractActionController
 
         return $this->response;
     }
+
+    public function forgotPasswordAction(){
+        if ($this->request->isGet() && $this->request->isXmlHttpRequest()) {
+            $user = $this->userService->getUserByEmail($this->request->getQuery()->email);
+            $language = $this->request->getQuery()->language;
+            $isSent = false;
+            if($user){
+                $passwordLink = $this->userService->generatePasswordLink($user, $language);
+                $isSent = true;
+            }
+
+            return new JsonModel(array($isSent ? 1 : 0));
+        }
+
+        return $this->response;
+    }
 }

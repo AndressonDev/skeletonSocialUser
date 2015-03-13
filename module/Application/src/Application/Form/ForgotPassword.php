@@ -41,7 +41,7 @@ class ForgotPassword extends Form implements ObjectManagerAwareInterface
 		parent::__construct('forgotPassword');
 
         $email = new Text('email');
-        $email->setAttribute('id', 'email');
+        $email->setAttribute('id', 'forgotEmail');
         $email->setAttribute('required', 'required')
                 ->setAttribute('class', 'form-control')
 		        ->setAttribute('placeholder', $this->translator->translate('forgotPassword.email.placeholder'));
@@ -50,6 +50,7 @@ class ForgotPassword extends Form implements ObjectManagerAwareInterface
 		$this->add($email);
 		
 		$submit = new Submit('submit');
+        $submit->setAttribute('id', 'sendPassword');
 		$submit->setAttribute('class',  'btn btn-primary btn-sm pull-right');
 		$submit->setValue($this->translator->translate('forgotPassword.submitButton.submitButton'));
 		$this->add($submit);

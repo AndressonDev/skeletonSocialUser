@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: skeletonSocialUser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-11 10:31+0300\n"
-"PO-Revision-Date: 2015-03-11 10:56+0300\n"
+"POT-Creation-Date: 2015-03-13 08:56+0300\n"
+"PO-Revision-Date: 2015-03-13 08:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: Andresson Developments OÜ\n"
 "Language: en_US\n"
@@ -52,6 +52,7 @@ msgid "register.email.placeholder"
 msgstr "E-mail"
 
 #: Application/src/Application/Form/RegisterForm.php:134
+#: Application/src/Application/Form/ForgotPassword.php:48
 msgid "register.email.label"
 msgstr "E-mail:"
 
@@ -103,19 +104,19 @@ msgstr "Too long!"
 msgid "register.password.incorrectLength.short"
 msgstr "Too short!"
 
-#: Application/src/Application/Form/ForgotPassword.php:46
+#: Application/src/Application/Form/ForgotPassword.php:47
 msgid "forgotPassword.email.placeholder"
 msgstr "E-mail"
 
-#: Application/src/Application/Form/ForgotPassword.php:51
-msgid "forgotPassword.submit.value"
+#: Application/src/Application/Form/ForgotPassword.php:55
+msgid "forgotPassword.submitButton.submitButton"
 msgstr "Send"
 
-#: Application/src/Application/Form/ForgotPassword.php:70
+#: Application/src/Application/Form/ForgotPassword.php:74
 msgid "forgotPassword.email.notExists"
 msgstr "E-mail not exists!"
 
-#: Application/src/Application/Form/ForgotPassword.php:72
+#: Application/src/Application/Form/ForgotPassword.php:76
 msgid "forgotPassword.email.invalidFormat"
 msgstr "E-mail is invalid format"
 
@@ -147,90 +148,48 @@ msgstr "Password too long!"
 msgid "newPassword.password.incorrectLength.short"
 msgstr "Password too short!"
 
-#: Application/src/Application/Service/UserService.php:157
+#: Application/src/Application/Service/UserService.php:158
 msgid "mail.forgotPassword.subject"
 msgstr "Forgot password"
 
-#: Application/src/Application/Service/UserService.php:159
+#: Application/src/Application/Service/UserService.php:160
 msgid "mail.forgotPassword.bodyMessageBeforeLink"
 msgstr "Go to this link to reset Your password "
 
-#: Application/src/Application/Service/UserService.php:292
+#: Application/src/Application/Service/UserService.php:306
 msgid "IdAuth.errorMessage.USER_WITH_EMAIL_NOT_FOUND"
 msgstr ""
 
-#: Application/src/Application/Service/UserService.php:302
+#: Application/src/Application/Service/UserService.php:316
 msgid "IdAuth.errorMessage.NO_ID_CARD_USER_FOUND"
 msgstr ""
 
-#: Application/src/Application/Service/UserService.php:306
+#: Application/src/Application/Service/UserService.php:320
 msgid "IdAuth.errorMessage.NO_ID_CARD_USER_NOT_MATCH"
 msgstr ""
 
-#: Application/src/Application/Controller/UserController.php:206
+#: Application/src/Application/Controller/UserController.php:207
 msgid "Application.user.message.passwordLinkSent"
 msgstr "Password link sent!"
 
-#: Application/src/Application/Controller/UserController.php:247
+#: Application/src/Application/Controller/UserController.php:250
 msgid "Application.user.message.passwordChanged"
 msgstr "Password changed!"
 
-#: Application/src/Application/Controller/UserController.php:332
-#: Application/src/Application/Controller/UserController.php:357
+#: Application/src/Application/Controller/UserController.php:335
+#: Application/src/Application/Controller/UserController.php:360
 msgid "IdAuth.errorMessage.SESSION_DATA_NOT_VALID"
 msgstr ""
 
-#: Application/view/layout/layout.phtml:6
-msgid "Skeleton Application"
-msgstr ""
-
-#: Application/view/layout/layout.phtml:54
-msgid "Home"
-msgstr ""
-
-#: Application/view/layout/layout.phtml:56
-msgid "layout.head.logInButton"
-msgstr "Log in"
-
-#: Application/view/layout/layout.phtml:58
-msgid "layout.head.logOutButton"
-msgstr "Log out"
-
-#: Application/view/layout/layout.phtml:68
-msgid "All rights reserved."
-msgstr ""
-
-#: Application/view/layout/layout.phtml:72
-msgid "layout.modal.forgotPassword.titleAttribute"
-msgstr ""
-
-#: Application/view/layout/layout.phtml:75
-msgid "layout.modal.forgotPassword.contentMessage"
-msgstr ""
-
-#: Application/view/layout/layout.phtml:77
-msgid "layout.modal.forgotPassword.email.placeholder"
-msgstr ""
-
-#: Application/view/layout/layout.phtml:78
-msgid "layout.head.loginForm.error.email"
-msgstr ""
-
 #: Application/view/layout/layout.phtml:79
-msgid "layout.head.loginForm.error.emailNotExists"
-msgstr ""
-
-#: Application/view/layout/layout.phtml:81
-msgid "layout.modal.forgotPassword.submitButton"
-msgstr ""
-
-#: Application/view/layout/layout.phtml:86
+#: Application/view/application/user/forgot-password.phtml:38
 msgid "layout.password.forgotPasswordSuccessMessage"
-msgstr ""
+msgstr "Password sent!"
 
-#: Application/view/layout/layout.phtml:87
+#: Application/view/layout/layout.phtml:80
+#: Application/view/application/user/forgot-password.phtml:39
 msgid "layout.password.forgotPasswordErrorMessage"
-msgstr ""
+msgstr "Something went wrong!"
 
 #: Application/view/layout/partial/language-select.phtml:10
 msgid "language.select.et"
@@ -243,76 +202,6 @@ msgstr "English"
 #: Application/view/layout/partial/language-select.phtml:12
 msgid "language.select.ru"
 msgstr "Russian"
-
-#: Application/view/application/index/index.phtml:2
-#, php-format
-msgid "Welcome to %sZend Framework 2%s"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:3
-#, php-format
-msgid ""
-"Congratulations! You have successfully installed the %sZF2 Skeleton "
-"Application%s. You are currently running Zend Framework version %s. This "
-"skeleton can serve as a simple starting point for you to begin building your "
-"application on ZF2."
-msgstr ""
-
-#: Application/view/application/index/index.phtml:4
-msgid "Fork Zend Framework 2 on GitHub"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:12
-msgid "Follow Development"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:15
-#, php-format
-msgid ""
-"Zend Framework 2 is under active development. If you are interested in "
-"following the development of ZF2, there is a special ZF2 portal on the "
-"official Zend Framework website which provides links to the ZF2 %swiki%s, "
-"%sdev blog%s, %sissue tracker%s, and much more. This is a great resource for "
-"staying up to date with the latest developments!"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:16
-msgid "ZF2 Development Portal"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:24
-msgid "Discover Modules"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:27
-#, php-format
-msgid ""
-"The community is working on developing a community site to serve as a "
-"repository and gallery for ZF2 modules. The project is available %son GitHub"
-"%s. The site is currently live and currently contains a list of some of the "
-"modules already available for ZF2."
-msgstr ""
-
-#: Application/view/application/index/index.phtml:28
-msgid "Explore ZF2 Modules"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:36
-msgid "Help &amp; Support"
-msgstr ""
-
-#: Application/view/application/index/index.phtml:39
-#, php-format
-msgid ""
-"If you need any help or support while developing with ZF2, you may reach us "
-"via IRC: %s#zftalk on Freenode%s. We'd love to hear any questions or "
-"feedback you may have regarding the beta releases. Alternatively, you may "
-"subscribe and post questions to the %smailing lists%s."
-msgstr ""
-
-#: Application/view/application/index/index.phtml:40
-msgid "Ping us on IRC"
-msgstr ""
 
 #: Application/view/application/user/register.phtml:3
 msgid "application.user.register.registerIsDisabled"
@@ -343,142 +232,156 @@ msgstr "E-mail is not correct!"
 msgid "application.user.register.password.help-block"
 msgstr "Password is not correct!"
 
-#: Application/view/application/user/register.phtml:24
+#: Application/view/application/user/register.phtml:28
 msgid "application.user.register.heading"
 msgstr "Registration"
 
+#: Application/view/application/user/register.phtml:53
+#: Application/view/application/user/forgot-password.phtml:33
+msgid "Register.backLink"
+msgstr "Back"
+
 #: Application/view/application/user/id-login.phtml:8
-#: Application/view/application/user/login.phtml:8
-#: Application/view/application/user/forgot-password.phtml:4
+#: Application/view/application/user/login.phtml:10
 msgid "loginForm.email.placeholder"
 msgstr "E-mail"
 
 #: Application/view/application/user/id-login.phtml:9
-#: Application/view/application/user/login.phtml:9
-#: Application/view/application/user/forgot-password.phtml:5
+#: Application/view/application/user/login.phtml:11
 msgid "loginForm.email.label"
 msgstr "E-mail:"
 
 #: Application/view/application/user/id-login.phtml:12
-#: Application/view/application/user/login.phtml:12
+#: Application/view/application/user/login.phtml:15
 msgid "loginForm.password.placeholder"
 msgstr "Password"
 
 #: Application/view/application/user/id-login.phtml:13
-#: Application/view/application/user/login.phtml:13
+#: Application/view/application/user/login.phtml:16
 msgid "loginForm.password.label"
 msgstr "Password:"
 
-#: Application/view/application/user/id-login.phtml:19
-msgid "Login.tab.simpleLogin"
-msgstr "Log in"
-
-#: Application/view/application/user/id-login.phtml:21
-msgid "Login.tab.IDLogin"
-msgstr "ID log in"
-
-#: Application/view/application/user/id-login.phtml:24
-msgid "Login.tab.MobileIDLogin"
-msgstr "Mobile ID log in"
-
-#: Application/view/application/user/id-login.phtml:43
-msgid "Login.NotRegistered.question"
-msgstr "Not registered? "
-
-#: Application/view/application/user/id-login.phtml:43
-#: Application/view/application/user/login.phtml:24
-msgid "login.NotRegistered.registerLink"
-msgstr "register"
-
-#: Application/view/application/user/id-login.phtml:46
-msgid "Login.forgotPasswordLink"
-msgstr "forgot password"
-
-#: Application/view/application/user/id-login.phtml:53
+#: Application/view/application/user/id-login.phtml:58
+#: Application/view/application/user/login.phtml:68
 msgid "Login.MobileLogin.confirmationMessage"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:54
+#: Application/view/application/user/id-login.phtml:59
+#: Application/view/application/user/login.phtml:69
 msgid "Login.MobileLogin.CancelLoginButton"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:63
+#: Application/view/application/user/id-login.phtml:71
+#: Application/view/application/user/login.phtml:40
+msgid "Login.tab.simpleLogin"
+msgstr "Log in"
+
+#: Application/view/application/user/id-login.phtml:73
+#: Application/view/application/user/login.phtml:42
+msgid "Login.tab.IDLogin"
+msgstr "ID log in"
+
+#: Application/view/application/user/id-login.phtml:76
+#: Application/view/application/user/login.phtml:45
+msgid "Login.tab.MobileIDLogin"
+msgstr "Mobile ID log in"
+
+#: Application/view/application/user/id-login.phtml:96
+#: Application/view/application/user/login.phtml:77
+msgid "Login.NotRegistered.question"
+msgstr "Not registered? "
+
+#: Application/view/application/user/id-login.phtml:96
+#: Application/view/application/user/login.phtml:77
+msgid "login.NotRegistered.registerLink"
+msgstr "register"
+
+#: Application/view/application/user/id-login.phtml:99
+#: Application/view/application/user/login.phtml:80
+msgid "Login.forgotPasswordLink"
+msgstr "forgot password"
+
+#: Application/view/application/user/id-login.phtml:130
+#: Application/view/application/user/login.phtml:88
 msgid "IdLogin.Status.NOT_VALID"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:64
+#: Application/view/application/user/id-login.phtml:131
+#: Application/view/application/user/login.phtml:89
 msgid "IdLogin.Status.EXPIRED_TRANSACTION"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:65
+#: Application/view/application/user/id-login.phtml:132
+#: Application/view/application/user/login.phtml:90
 msgid "IdLogin.Status.USER_CANCEL"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:66
+#: Application/view/application/user/id-login.phtml:133
+#: Application/view/application/user/login.phtml:91
 msgid "IdLogin.Status.MID_NOT_READY"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:67
+#: Application/view/application/user/id-login.phtml:134
+#: Application/view/application/user/login.phtml:92
 msgid "IdLogin.Status.PHONE_ABSENT"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:68
+#: Application/view/application/user/id-login.phtml:135
+#: Application/view/application/user/login.phtml:93
 msgid "IdLogin.Status.SENDING_ERROR"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:69
+#: Application/view/application/user/id-login.phtml:136
+#: Application/view/application/user/login.phtml:94
 msgid "IdLogin.Status.SIM_ERROR"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:70
+#: Application/view/application/user/id-login.phtml:137
+#: Application/view/application/user/login.phtml:95
 msgid "IdLogin.Status.INTERNAL_ERROR"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:72
+#: Application/view/application/user/id-login.phtml:139
+#: Application/view/application/user/login.phtml:97
 msgid "IdLogin.Message.CHECKING_CONTRACT"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:73
+#: Application/view/application/user/id-login.phtml:140
+#: Application/view/application/user/login.phtml:98
 msgid "IdLogin.Message.REQUEST_SENT"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:74
+#: Application/view/application/user/id-login.phtml:141
+#: Application/view/application/user/login.phtml:99
 msgid "IdLogin.Message.SERVER_FAULT"
 msgstr ""
 
-#: Application/view/application/user/id-login.phtml:75
+#: Application/view/application/user/id-login.phtml:142
+#: Application/view/application/user/login.phtml:100
 msgid "IdLogin.Message.RESPONSE_RECEIVED"
 msgstr ""
 
-#: Application/view/application/user/login.phtml:19
-msgid "login.heading"
-msgstr "Log in"
-
-#: Application/view/application/user/login.phtml:24
-msgid "login.NotRegistered.question"
-msgstr "Not registered? "
-
-#: Application/view/application/user/login.phtml:27
-msgid "login.forgotPasswordLink"
-msgstr "forgot password"
-
-#: Application/view/application/user/forgot-password.phtml:9
+#: Application/view/application/user/forgot-password.phtml:11
 msgid "forgotPassword.heading"
 msgstr "Forgot password"
 
-#: Application/view/application/user/forgot-password.phtml:22
-msgid "forgotPassword.submitButton.submitButton"
-msgstr "Send"
+#: Application/view/application/user/forgot-password.phtml:19
+msgid "layout.head.loginForm.error.email"
+msgstr "E-mail is not correct!"
 
-#: Application/view/application/user/new-password.phtml:9
+#: Application/view/application/user/forgot-password.phtml:20
+msgid "layout.head.loginForm.error.emailNotExists"
+msgstr "E-mail not found!"
+
+#: Application/view/application/user/new-password.phtml:13
 msgid "newPassword.heading"
 msgstr "Reset password"
 
-#: Application/view/application/user/new-password.phtml:15
+#: Application/view/application/user/new-password.phtml:21
 msgid "application.user.new-password.password.help-block"
 msgstr "Password is not correct!"
 
-#: Application/view/application/user/new-password.phtml:22
+#: Application/view/application/user/new-password.phtml:28
 msgid "application.user.new-password.passwordRepeat.help-block"
 msgstr "Password repeat is not correct!"
 
@@ -510,9 +413,13 @@ msgstr "Phone"
 
 #: Application/view/application/user/partial/mobile-id-login.phtml:13
 msgid "Login.phone.help-block"
-msgstr "Phone is not corre"
+msgstr "Phone is not correct"
 
-#: Application/view/application/user/partial/normal-login.phtml:21
+#: Application/view/application/user/partial/normal-login.phtml:19
+msgid "Login.login-error.help-block"
+msgstr "Wrong e-mail or password!"
+
+#: Application/view/application/user/partial/normal-login.phtml:22
 msgid "login.submitButton"
 msgstr "Log in"
 
@@ -580,3 +487,18 @@ msgstr ""
 #: Application/view/error/index.phtml:1
 msgid "An error occurred"
 msgstr ""
+
+#~ msgid "forgotPassword.submit.value"
+#~ msgstr "Send"
+
+#~ msgid "layout.head.logOutButton"
+#~ msgstr "Log out"
+
+#~ msgid "login.heading"
+#~ msgstr "Log in"
+
+#~ msgid "login.NotRegistered.question"
+#~ msgstr "Not registered? "
+
+#~ msgid "login.forgotPasswordLink"
+#~ msgstr "forgot password"
